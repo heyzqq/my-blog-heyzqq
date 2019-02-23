@@ -8,7 +8,7 @@ subtitle:
 description:
 keywords:
 author: John Doe
-language:
+language: zh-CN
 timezone:
 
 # URL
@@ -73,11 +73,23 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
+
+# Leancloud viewer counter
+leancloud_counter_security:
+  enable_sync: true
+  app_id: "gtB1pK4X16evj8OU3pFFVoIt-gzGzoHsz"
+  app_key: "qMI6CxGILAO9FzqokEv9Hesr"
+  username: heyzqq
+  password: heyzqq
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repository: git@github.com:heyzqq/heyzqq.github.io.git
-  branch: master
+  -
+    type: leancloud_counter_security_sync
+  -
+    type: git
+    repository: git@github.com:heyzqq/heyzqq.github.io.git
+    branch: master
+
