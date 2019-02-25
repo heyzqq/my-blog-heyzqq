@@ -49,4 +49,7 @@
    $ rm *.md
    $ hexo d -g
    ```
+5. leancloud 阅读统计:  
+   再修改文章后, 若不能正常访问服务器, 可以删除 `<<blog directory>>/source/leancloud.memo`,  
+   然后重新部署: `hexo d`
 
