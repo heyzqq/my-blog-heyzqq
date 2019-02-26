@@ -53,3 +53,14 @@
    再修改文章后, 若不能正常访问服务器, 可以删除 `<<blog directory>>/source/leancloud.memo`,  
    然后重新部署: `hexo d`
 
+#### 4. 包管理
+
+`npm install`, `npm install --save` 与 `npm install --save-dev`:  
+
+- ① 会把包安装到 `node_modules` 中; 不修改 `package.json`; 之后运行 `npm install` 不会自动安装该包.  
+- ② 会把包安装到 `node_modules` 中; 在 `package.json` 中的 `dependencies` 位置添加属性; 会自动安装该包到 `node_modules` 目录中.  
+- ③ 会把包安装到 `node_modules` 中; 在 `package.json` 中的 `devDependencies` 的位置添加属性; 会自动安装该包到 `node_modules` 目录中.  
+    运行 `npm install --production` 或者注明变量值 `NODE_ENV` 为 `production` 时, 不会自动安装.  
+* 总之, 运行时需要的用到的包使用 `--save`, 否则使用 `--save-dev`  
+
+
