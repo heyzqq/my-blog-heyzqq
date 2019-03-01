@@ -69,4 +69,14 @@
     运行 `npm install --production` 或者注明变量值 `NODE_ENV` 为 `production` 时, 不会自动安装.  
 * 总之, 运行时需要的用到的包使用 `--save`, 否则使用 `--save-dev`  
 
+#### 5. 错误
+
+如果是 `.deploy_git` 目录下的问题, 直线删除该目录重来即可.  
+
+```
+Error: EACCES: permission denied
+```
+
+如果是 publickey 错误, 那就是公钥的问题, Ubuntu 习惯普通用户登录, 登录之后切换到 root 用户导致的, 切回普通用户或增加 root 用户的SSH KEY 到 github 上.  
+
 
