@@ -1,4 +1,4 @@
-# TaylorBoy.github.io
+# heyzqq.github.io
 
 #### 1. 环境搭建
 
@@ -42,6 +42,11 @@
 
    # 生成 & 发布
    $ hexo d -g
+
+   # 本地部署
+   $ hexo clean
+   $ hexo generate (g)
+   $ hexo server (s)
    ```
 4. 删除文档
    ```
@@ -55,6 +60,7 @@
 
 #### 4. 包管理
 
+同步库的时候, 需要运行 `npm install`(或`yarn install`), 以便将需要的包安装进来.  
 `npm install`, `npm install --save` 与 `npm install --save-dev`:  
 
 - ① 会把包安装到 `node_modules` 中; 不修改 `package.json`; 之后运行 `npm install` 不会自动安装该包.  
